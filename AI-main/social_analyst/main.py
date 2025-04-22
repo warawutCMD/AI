@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from social_analyst.keyword_extractor import ThaiKeywordExtractor
+from social_analyst.keyword_extractor import ThaiCustomTokenizer
 
 if __name__ == "__main__":
     comments = [
@@ -20,7 +20,7 @@ if __name__ == "__main__":
         "ให้กันจอมพลัง เป็นนายกแทนนางอิ๊ง"
     ]
 
-    extractor = ThaiKeywordExtractor()
+    extractor = ThaiCustomTokenizer()
     keywords = extractor.extract_keywords(comments, top_n=5)
 
     print("🔍 Keywords เด่น:")
